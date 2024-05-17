@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Website HTML and CSS | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts Links For Icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a class="logo" href="#"><span style="color: blue">Code</span><span style="color:white ">Solver</span></a>
-        <ul class="menu-links">
-          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
-      </nav>
-    </header>
 
-    <section class="hero-section">
-      <div class="content">
-        <h2>Unlock Your Coding Potential with Code Solver :</h2>
-        <p></p>
-        <a href="./Code-Solver.rar" download="Code-Solver.zip">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Website HTML and CSS | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts Links For Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#"><span style="color: blue">Code</span><span style="color:white ">Solver</span></a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="https://github.com/Rohankoley/Code-Solver">Gitgub</a></li>
+        <p id="popupBtn">Description</p>
+        <div id="popup" class="popup-content">
+          <div class="popup-text">
+            Experience the future of coding with the KeetCode Problem Solver Chrome extension. Powered by cutting-edge artificial intelligence, our extension revolutionizes the way you tackle coding challenges. Whether you're a beginner or an experienced programmer, our AI-driven solution offers personalized assistance, guiding you through complex problems with ease. Say goodbye to endless hours of frustration and hello to efficient problem-solving. Elevate your coding skills today with KeetCode Problem Solver."Feel free to customize the heading and description to better fit your branding and target audience. Highlighting the benefits of your extension and how it can improve users' coding experience will help attract attention and encourage downloads.
+          </div>
+        </div>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="content">
+      <h2>Unlock Your Coding Potential with Code Solver :</h2>
+      <p></p>
+      <a href="./Code-Solver.rar" download="Code-Solver.zip">
         <button>Download the Zip file</button>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <script>
-      const header = document.querySelector("header");
-      const hamburgerBtn = document.querySelector("#hamburger-btn");
-      const closeMenuBtn = document.querySelector("#close-menu-btn");
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
 
-      // Toggle mobile menu on hamburger button click
-      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
 
-      // Close mobile menu on close button click
-      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-    </script>
-    
-  </body>
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+
+    ///
+    document.getElementById('popupBtn').addEventListener('mouseenter', function () {
+      document.getElementById('popup').style.display = 'block';
+    });
+
+    document.getElementById('popupBtn').addEventListener('mouseleave', function () {
+      document.getElementById('popup').style.display = 'none';
+    });
+
+  </script>
+
+</body>
+
 </html>

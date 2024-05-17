@@ -172,3 +172,21 @@ header .navbar {
     padding: 9px 18px;
   }
 }
+
+
+.popup-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.popup-text {
+  color: #333;
+}
+#popupBtn{
+  color:white;
+}
