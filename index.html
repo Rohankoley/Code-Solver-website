@@ -20,6 +20,14 @@
         <span id="close-menu-btn" class="material-symbols-outlined">close</span>
         <li><a href="https://github.com/Rohankoley/Code-Solver">Gitgub</a></li>
         <li id="popupBtn">Description</li>
+        <li>
+          <button id="contact">Contact us</button>
+          <div class="popup-content">
+            <div class="">
+             <input type="color" name="" id="">
+            </div>
+          </div>
+        </li>
         <div id="popup" class="popup-content">
           <div class="popup-text">
             Stuck on a coding challenge?  Our extension  solves problems and suggests approaches, all within your browser.  Master coding concepts faster with expert guidance, right where you work..
@@ -38,7 +46,6 @@
     </div>
   </section>
 
- 
 
 
 
@@ -62,6 +69,12 @@
       document.getElementById('popup').style.display = 'none';
     });
 
+document.getElementById('contact').addEventListener('click', function () {
+  if(document.getElementById('popup').style.display = 'block'){
+    document.getElementById('popup').style.display = 'none';
+  }
+
+})
   </script>
 
 </body>
